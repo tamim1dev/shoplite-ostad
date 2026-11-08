@@ -215,33 +215,17 @@ server {
 
 ## 5. Screenshots
 
-### Running application
-![App in browser](screenshots/01-app-browser.png)
+### IP table
+![IP table](screenshots/iptable.png)
 
-### `docker ps` on each EC2
-![EC2-1 docker ps](screenshots/02-ec2-1-docker-ps.png)
-![EC2-2 docker ps](screenshots/03-ec2-2-docker-ps.png)
-![EC2-3 docker ps](screenshots/04-ec2-3-docker-ps.png)
+### security-group
+![security-group](screenshots/security-group.png)
 
-### `docker network ls` and `docker network inspect` on each EC2
-![EC2-1 network](screenshots/05-ec2-1-network.png)
-![EC2-2 network](screenshots/06-ec2-2-network.png)
-![EC2-3 network](screenshots/07-ec2-3-network.png)
+### VPC creation
+![VPC creation](screenshots/vpc-create.png)
 
-### `docker volume ls` and `docker volume inspect` on EC2-3
-![EC2-3 volume](screenshots/08-ec2-3-volume.png)
-
-### Inbound rules of every Security Group
-![sg-ec2-1](screenshots/09-sg-ec2-1.png)
-![sg-ec2-2](screenshots/10-sg-ec2-2.png)
-![sg-ec2-3](screenshots/11-sg-ec2-3.png)
-
-### EC2-3 details showing no public IP
-![EC2-3 no public IP](screenshots/12-ec2-3-no-public-ip.png)
-
-### Product still present after the database container is removed and started again
-![Before removal](screenshots/13-before-db-removal.png)
-![After removal and restart](screenshots/14-after-db-restart.png)
+### VPC overview
+![VPC overview](screenshots/vpc-overview.png)
 
 ---
 
