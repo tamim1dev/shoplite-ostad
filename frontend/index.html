@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ShopLite</title>
+</head>
+<body style="font-family:sans-serif;max-width:600px;margin:2rem auto">
+<h1>🛍️ ShopLite Products</h1>
+<input id="n" placeholder="Name"> <input id="p" type="number" step="0.01" placeholder="Price">
+<button onclick="add()">Add</button>
+<ul id="l"></ul>
+<script>
+async function load(){
+  const r = await fetch('/api/products'); const d = await r.json();
+  l.innerHTML = d.map(x=>`<li>${x.name} — $${x.price}</li>`).join('');
+}
+async function add(){
+  await fetch('/api/products',{method:'POST',headers:{'Content-Type':'application/json'},
+    body:JSON.stringify({name:n.value,price:parseFloat(p.value)})});
+  n.value=p.value=''; load();
+}
+load();
+</script>
+</body>
+</html>
